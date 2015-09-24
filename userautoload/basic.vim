@@ -1,5 +1,12 @@
 " basic.vim
 
+" release autogroup in MyAutoCmd
+augroup MyAutoCmd
+  autocmd!
+augroup END
+
+set t_Co=256
+
 " Search
 "------------
 set ignorecase          " 大文字小文字を区別しない

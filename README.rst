@@ -16,6 +16,7 @@ Using for Ubuntu::
   sudo apt install vim python-flake8 python-jedi
   cd ~/.vim/
   git clone https://github.com/manzyun/myvim.git
+  echo 'runtime! myvim/userautoload/**/*.vim' > ~/.vimrc
 
 Maybe works...
 

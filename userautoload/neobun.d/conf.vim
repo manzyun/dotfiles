@@ -51,53 +51,49 @@ NeoBundle 'vim-scripts/Align'
 NeoBundle 'vim-scripts/YankRing.vim'
 
 if has('lua') && v:version >= 703 && has('patch885')
-NeoBundleLazy "Shougo/neocomplete.vim", {
-	\ "autoload": {
-	\   "insert": 1,
-	\ }}
-" 2013-07-03 14:30 NeoComplCacheに合わせた
-let g:neocomplete#enable_at_startup = 1
-let s:hooks = neobundle#get_hooks("neocomplete.vim")
-function! s:hooks.on_source(bundle)
-	let g:acp_enableAtStartup = 0
-	let g:neocomplet#enable_smart_case = 1
-endfunction
+	NeoBundleLazy "Shougo/neocomplete.vim", {
+		\ "autoload": {
+		\   "insert": 1,
+		\ },}
+	let g:neocomplete#enable_at_startup = 1
+	let s:hooks = neobundle#get_hooks("neocomplete.vim")
+	function! s:hooks.on_source(bundle)
+        	let g:acp_enableAtStartup = 0
+		let g:neocomplet#enable_smart_case = 1
+	endfunction
 else
-NeoBundleLazy "Shougo/neocomplcache.vim", {
-	\ "autoload": {
-	\   "insert": 1,
-	\ }}
-let g:neocomplcache_enable_at_startup = 1
-let s:hooks = neobundle#get_hooks("neocomplcache.vim")
-function! s:hooks.on_source(bundle)
-	let g:acp_enableAtStartup = 0
-	let g:neocomplcache_enable_smart_case = 1
-endfunction
-NeoBundle "nathanaelkane/vim-indent-guides"
+	NeoBundleLazy "Shougo/neocomplcache.vim", {
+		\ "autoload": {
+		\   "insert": 1,
+		\ },}
+	let g:neocomplcache_enable_at_startup = 1
+	let s:hooks = neobundle#get_hooks("neocomplcache.vim")
+	function! s:hooks.on_source(bundle)
+		let g:acp_enableAtStartup = 0
+		let g:neocomplcache_enable_smart_case = 1
+	endfunction
 endif
 
+NeoBundle "nathanaelkane/vim-indent-guides"
 NeoBundleLazy "sjl/gundo.vim", {
 \ "autoload": {
 \   "commands": ['GundoToggle'],
-\}} 
+\}}
 NeoBundleLazy "vim-scripts/TaskList.vim", {
 \ "autoload": {
 \   "mappings": ['<Plug>TaskList'],
 \}}
-NeoBundleLazy 'majutsushi/tagbar', {
+NeoBundleLazy "majutsushi/tagbar", {
 \ "autload": {
-\   "commands": ["TagbarToggle"],
-\ },
-\ "build": {
-\   "mac": "brew install ctags",
-\ }}
+\   "commands": ['TagbarToggle'],
+\}}
 NeoBundle "scrooloose/syntastic"
 " pip install flake8 すること
 
 NeoBundleLazy "davidhalter/jedi-vim", {
 \ "autoload": {
 \   "filetypes": ["python", "python3", "djangohtml"],
-\ }}
+\}}
 " pip install jedi すること
 
 NeoBundle "Rykka/riv.vim"

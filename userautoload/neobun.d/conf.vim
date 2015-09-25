@@ -83,10 +83,7 @@ NeoBundleLazy "vim-scripts/TaskList.vim", {
 \ "autoload": {
 \   "mappings": ['<Plug>TaskList'],
 \}}
-NeoBundleLazy "majutsushi/tagbar", {
-\ "autload": {
-\   "commands": ['TagbarToggle'],
-\}}
+NeoBundle "majutsushi/tagbar"
 NeoBundle "scrooloose/syntastic"
 " pip install flake8 すること
 

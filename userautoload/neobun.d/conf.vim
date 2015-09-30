@@ -85,7 +85,7 @@ NeoBundleLazy "vim-scripts/TaskList.vim", {
 \}}
 NeoBundle "majutsushi/tagbar"
 NeoBundle "scrooloose/syntastic"
-" pip install flake8 すること
+" pip install pylint すること
 
 NeoBundleLazy "davidhalter/jedi-vim", {
 \ "autoload": {

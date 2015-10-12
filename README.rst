@@ -16,7 +16,13 @@ Using for Ubuntu::
   sudo apt install vim python-flake8 python-jedi
   cd ~/.vim/
   git clone https://github.com/manzyun/myvim.git
-  echo 'runtime! myvim/userautoload/**/*.vim' > ~/.vimrc
+
+Sorry, this under line is japanese
+myvimの中身を.vim直下に展開する。
+
+after this command::
+
+  echo 'runtime! userautoload/**/*.vim' > ~/.vimrc
 
 Maybe works...
 

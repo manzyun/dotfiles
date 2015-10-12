@@ -6,6 +6,8 @@ augroup MyAutoCmd
 augroup END
 
 set t_Co=256
+set mouse=a
+
 
 " Search
 "------------

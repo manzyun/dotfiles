@@ -29,7 +29,7 @@ NeoBundle "Shougo/vimproc", {
 
 "  Packages is this under line
 " --------------------------------
-NeoBundle 'Lokaltog/vim-powerline'
+NeoBundle 'Lokaltog/powerline', { 'rtp' : 'powerline/bindings/vim'}
 NeoBundle "thinca/vim-template"
 NeoBundleLazy "Shougo/unite.vim", {
 \ "autoload": {

@@ -1,11 +1,11 @@
 ###################
-My vim config files
+My dotfiles
 ###################
 
 What's this ?
 =============
 
-It's my vim config files. 
+It's my dotfiles.
 Not anymore.
 
 How to use ?
@@ -13,18 +13,17 @@ How to use ?
 
 Using for Ubuntu::
 
-  sudo apt install vim python-flake8 python-jedi
-  cd ~/.vim/
   git clone https://github.com/manzyun/myvim.git
 
-Sorry, this under line is japanese
-myvimの中身を.vim直下に展開する。
+Using Plug-in
+==================
 
-after this command::
+Vim
+--------------
 
-  echo 'runtime! userautoload/**/*.vim' > ~/.vimrc
+* junegunn/vim-plug
 
-Maybe works...
+
 
 Reference
 =========

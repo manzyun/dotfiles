@@ -18,6 +18,12 @@ Using for Ubuntu::
 Using Plug-in
 ==================
 
+* powerline/powerline
+
+Install for Ubuntu::
+
+  sudo apt install powerline
+
 Vim
 --------------
 

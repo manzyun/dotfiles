@@ -157,7 +157,7 @@ endif
 call plug#begin('~/.vim/plugged')
   Plug 'junegunn/vim-plug',
         \ {'dir': '~/.vim/plugged/vim-plug/autoload'}
-  Plug 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim'}
+"  Plug 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim'}
   Plug 'tpope/vim-surround'
   Plug 'vim-scripts/Align'
   Plug 'nathanaelkane/vim-indent-guides'
@@ -182,6 +182,13 @@ endif
 "}}}
 call plug#end()
 
+
  " ファイルタイププラグインおよびインデントを有効化
 filetype plugin indent on
 "}}}
+
+"{{{ Power Line
+python from powerline.vim import setup as powerline_setup
+python powerline_setup()
+python del powerline_setup
+""}}}

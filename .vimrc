@@ -164,6 +164,7 @@ call plug#begin('~/.vim/plugged')
   Plug 'sjl/gundo.vim', {'on': 'GundoToggle'}
   Plug 'majutsushi/tagbar'
   Plug 'scrooloose/syntastic'
+  Plug 'tpope/vim-surround'
 
 if has('lua') && v:version >= 703 && has('patch885')
   Plug 'Shougo/neocomplete.vim'

@@ -24,6 +24,11 @@ Install for Ubuntu::
 
   sudo apt install powerline
 
+Zsh
+--------------
+
+* sorin-ionescu/prezto
+
 Vim
 --------------
 

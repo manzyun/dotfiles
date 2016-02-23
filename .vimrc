@@ -157,7 +157,6 @@ endif
 call plug#begin('~/.vim/plugged')
   Plug 'junegunn/vim-plug',
         \ {'dir': '~/.vim/plugged/vim-plug/autoload'}
-"  Plug 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim'}
   Plug 'tpope/vim-surround'
   Plug 'vim-scripts/Align'
   Plug 'nathanaelkane/vim-indent-guides'
@@ -165,7 +164,8 @@ call plug#begin('~/.vim/plugged')
   Plug 'majutsushi/tagbar'
   Plug 'scrooloose/syntastic'
   Plug 'tpope/vim-surround'
-
+  Plug 'scrooloose/nerdtree'
+  
 if has('lua') && v:version >= 703 && has('patch885')
   Plug 'Shougo/neocomplete.vim'
   Plug 'Shougo/neocomplcache.vim'

@@ -180,6 +180,11 @@ endif
   Plug 'pangloss/vim-javascript', {'for': 'javascript'}
   Plug 'jelera/vim-javascript-syntax', {'for': 'javascript'}
 "}}}
+
+"{{{ HTML
+  Plug 'mattn/emmet-vim', {'for': ['html', 'css']}
+"}}}
+
 "}}}
 call plug#end()
 

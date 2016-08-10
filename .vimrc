@@ -155,6 +155,7 @@ endif
 "}}}
 "{{{ Pulgs
 call plug#begin('~/.vim/plugged')
+  Plug 'powerline/powerline', { 'rtp' : 'powerline/bindings/vim'}
   Plug 'junegunn/vim-plug',
         \ {'dir': '~/.vim/plugged/vim-plug/autoload'}
   Plug 'tpope/vim-surround'

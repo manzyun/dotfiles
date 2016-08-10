@@ -193,9 +193,3 @@ call plug#end()
  " ファイルタイププラグインおよびインデントを有効化
 filetype plugin indent on
 "}}}
-
-"{{{ Power Line
-python from powerline.vim import setup as powerline_setup
-python powerline_setup()
-python del powerline_setup
-""}}}

@@ -188,29 +188,9 @@ call plug#begin('~/.vim/plugged')
   Plug 'sjl/gundo.vim', {'on': 'GundoToggle'}
   Plug 'majutsushi/tagbar'
   Plug 'scrooloose/syntastic'
-  Plug 'tpope/vim-surround'
   Plug 'scrooloose/nerdtree'
-  Plug 'itchyny/lightline.vim'
+  Plug 'vim-airline/vim-airline'
   Plug 'Yggdroot/indentLine'
-  
-if has('lua') && v:version >= 703 && has('patch885')
-  Plug 'Shougo/neocomplete.vim'
-  Plug 'Shougo/neocomplcache.vim'
-endif
-"{{{ Python
-  Plug 'davidhalter/jedi-vim', {'for': ['python', 'python3', 'djangohtml']}
-"}}}
-"{{{ Restructured Text
-  Plug 'Rykka/riv.vim', {'for': ['rest', 'rst']}
-"}}}
-"{{{ Javascript
-  Plug 'pangloss/vim-javascript', {'for': 'javascript'}
-  Plug 'jelera/vim-javascript-syntax', {'for': 'javascript'}
-"}}}
-
-"{{{ HTML
-  Plug 'mattn/emmet-vim', {'for': ['html', 'css']}
-"}}}
 
 "}}}
 call plug#end()

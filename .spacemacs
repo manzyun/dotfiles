@@ -336,6 +336,7 @@ you should place your code here."
   (use-package spaceline-all-the-icons
     :after spaceline
     :config (spaceline-all-the-icons-theme))
+  (setq neo-theme (if (display-graphic-p) 'icons 'arrow))
 
 ;; Do not write anything past this comment. This is where Emacs will
 ;; auto-generate custom variable definitions.

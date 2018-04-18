@@ -72,6 +72,7 @@ values."
      writeroom-mode
      spaceline-all-the-icons
      minimap
+     regex-tool
      )
    ;; A list of packages that cannot be updated.
    dotspacemacs-frozen-packages '()

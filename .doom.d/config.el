@@ -6,8 +6,14 @@
 (setq inferior-lisp-program `((ros ("ros" "run"))                       ; ros run の起動設定
         (sbcl ("~/.roswell/impls/x86-64/windows/sbcl-bin/1.4.14/bin/sbcl.exe"))))
 
+(def-package! ace-window
+  :custom
+  (aw-keys '(?a ?o ?e ?u ?h ?t ?n ?s))
+  :custom-face
+  (aw-leading-char-face((t(:height 4.0 :foreground "#00ff00")))))
 
-(aw-keys '(?a ?o ?u ?e ?h ?t ?n ?s))
-(aw-leading-char-face((t (:height 5.0 :foreground "#00ff00"))
-(beacon-color "green")
-(beacon-mode 1)
+(def-package! beacon
+  :custom
+  (beacon-color "green")
+  :config
+  (beacon-mode 1))

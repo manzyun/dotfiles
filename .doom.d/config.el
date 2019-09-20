@@ -6,6 +6,8 @@
 (setq inferior-lisp-program `((ros ("ros" "run"))                       ; ros run の起動設定
         (sbcl ("~/.roswell/impls/x86-64/windows/sbcl-bin/1.4.14/bin/sbcl.exe"))))
 
+(set-language-environment "Japanese")
+
 (def-package! ace-window
   :custom
   (aw-keys '(?a ?o ?e ?u ?h ?t ?n ?s))

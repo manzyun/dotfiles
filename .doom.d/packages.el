@@ -6,6 +6,7 @@
 ;; (package! another-package :recipe (:host github :repo "username/repo"))
 ;; (package! builtin-package :disable t)
 
+(package! evil-little-word :recipe (:fetcher github :repo "tarao/evil-plugins"))
 (package! mastodon)
 (package! org-pomodoro)
 (package! beacon)

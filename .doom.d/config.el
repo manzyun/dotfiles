@@ -19,3 +19,5 @@
   (beacon-color "green")
   :config
   (beacon-mode 1))
+
+(eshell-git-prompt-use-theme 'git-radar)

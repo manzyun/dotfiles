@@ -11,3 +11,4 @@
 (package! org-pomodoro)
 (package! beacon)
 (package! eshell-git-prompt)
+(package! minimap)

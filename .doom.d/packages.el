@@ -15,4 +15,3 @@
 (package! beacon)
 
 (package! eshell-git-prompt)
-(package! minimap)

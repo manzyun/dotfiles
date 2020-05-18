@@ -13,6 +13,7 @@
 (package! mastodon)
 (package! org-pomodoro)
 (package! beacon)
+(package! minimap)
 
 (package! eshell-git-prompt)
 (package! image-tooltip :recipe

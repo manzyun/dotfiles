@@ -34,12 +34,7 @@
   :custom
   (minimap-window-location 'right)
   (minimap-update-delay 0.2)
-  (minimap-minimum-width 20)
-  :config
-  (custom-set-faces!
-    '(minimap-active-region-background
-      ((((background dark)) (:background "#555555555555"))
-       t (:background "#C847D8FEFFFF"))) :group 'minimap))
+  (minimap-minimum-width 20))
 
 ;; For Godot Engine.
 (dolist (pattern '("\\.tscn\\'"

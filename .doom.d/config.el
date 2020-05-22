@@ -36,6 +36,11 @@
   (minimap-update-delay 0.2)
   (minimap-minimum-width 20))
 
+;; For private Org-mode documents directory
+(setq my-org-directory "~/Dropbox/org/")
+(setq my-org-agenda-directory "~/Dropbox/org/agenda/")
+(setq org-agenda-files (list my-org-directory my-org-agenda-directory))
+
 ;; For Godot Engine.
 (dolist (pattern '("\\.tscn\\'"
                    ;; Add more extensions here, if needed.

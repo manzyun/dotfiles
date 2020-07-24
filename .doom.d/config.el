@@ -42,12 +42,13 @@
 (setq org-agenda-files (list my-org-directory my-org-agenda-directory))
 
 ;; For Godot Engine.
-(dolist (pattern '("\\.tscn\\'"
-                   ;; Add more extensions here, if needed.
-                   ))
-  (add-to-list 'auto-mode-alist (cons pattern 'toml-mode)))
+;; (dolist (pattern '("\\.tscn\\'"
+;;                    ;; Add more extensions here, if needed.
+;;                    ))
+;;   (add-to-list 'auto-mode-alist (cons pattern 'toml-mode)))
+;;
+;; (add-hook! godot-gdscript-mode company-mode)
+;;
+;; (add-hook! godot-gdscript-mode
+;;           '(lambda () (set (make-local-variable 'yas-indent-line) 'fixed)))
 
-(add-hook! godot-gdscript-mode company-mode)
-
-(add-hook! godot-gdscript-mode
-          '(lambda () (set (make-local-variable 'yas-indent-line) 'fixed)))

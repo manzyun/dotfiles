@@ -10,6 +10,7 @@
 ;; (package! company-godot-gdscript :recipe (:host github :repo "francogarcia/company-godot-gdscript.el"))
 ;; (package! yasnippet-godot-gdscript :recipe (:host github :repo "francogarcia/yasnippet-godot-gdscript"))
 (package! gdscript-mode)
+(package! nhexl-mode)
 
 (package! exec-path-from-shell)
 (package! mastodon)

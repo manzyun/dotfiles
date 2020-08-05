@@ -6,18 +6,12 @@
 ;; (package! another-package :recipe (:host github :repo "username/repo"))
 ;; (package! builtin-package :disable t)
 
-;; (package! godot-gdscript.el :recipe (:host github :repo "francogarcia/godot-gdscript.el"))
-;; (package! company-godot-gdscript :recipe (:host github :repo "francogarcia/company-godot-gdscript.el"))
-;; (package! yasnippet-godot-gdscript :recipe (:host github :repo "francogarcia/yasnippet-godot-gdscript"))
-(package! gdscript-mode)
 (package! nhexl-mode)
 
 (package! exec-path-from-shell)
 (package! mastodon)
 (package! org-pomodoro)
 (package! beacon)
-(package! minimap)
-
 (package! eshell-git-prompt)
 (package! image-tooltip :recipe
   (:host nil :repo

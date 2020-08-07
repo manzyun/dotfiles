@@ -22,3 +22,21 @@
 (setq my-org-directory "~/Dropbox/org/")
 (setq my-org-agenda-directory "~/Dropbox/org/agenda/")
 (setq org-agenda-files (list my-org-directory my-org-agenda-directory))
+
+(use-package! ace-window
+  :custom
+  (aw-keys '(?a ?o ?e ?u ?h ?t ?n ?s))
+  :custom-face
+  (aw-leading-char-face ((t (:height 4.0 :foreground "#00ff00")))))
+
+(use-package! beacon
+  :custom
+  (beacon-color "green")
+  :config
+  (beacon-mode 1))
+
+(use-package! minimap
+  :custom
+  (minimap-window-location 'right)
+  (minimap-update-delay 0.2)
+  (minimap-minimum-width 20))

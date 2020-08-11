@@ -1,0 +1,16 @@
+#+TITLE Manzyun's DOOM Emacs configure
+#+AUTHOR manzyun <manzyun@gmail.com>
+
+* For Windows with Scoop
+1. scoop install emacs
+  - and any packages.
+2. Append =PATH= enviromnent value. value is =~= . 
+3. doom install
+
+* For Ubuntu
+1. apt install emacs
+2. doom install
+
+* Freaquency Ask Questions
+** Can't finish install about DOOM.
+Checking =literate= on =:config= . If not comment out, Change comment.

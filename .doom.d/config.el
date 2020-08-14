@@ -25,7 +25,7 @@
 
 (use-package! ace-window
   :custom
-  (aw-keys '(?a ?o ?e ?u ?h ?t ?n ?s))
+  (setq aw-keys '(?a ?o ?e ?u ?h ?t ?n ?s))
   :custom-face
   (aw-leading-char-face ((t (:height 4.0 :foreground "#00ff00")))))
 

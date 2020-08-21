@@ -6,6 +6,7 @@
 (prefer-coding-system 'utf-8)
 (setq coding-system-for-read 'utf-8)
 (setq coding-system-for-write 'utf-8)
+(setq default-input-method "japanese-skk")
 
 (setq doom-theme 'doom-moonlight)
 (setq doom-font(font-spec :family "Ubuntu Mono" :size 12)
@@ -23,9 +24,12 @@
 (setq my-org-agenda-directory "~/Dropbox/org/agenda/")
 (setq org-agenda-files (list my-org-directory my-org-agenda-directory))
 
+;(defvar skk-henkan-show-candidate-keys (?a ?o ?e ?u ?i ?h ?t ?n ?s)
+
 (use-package! ace-window
   :custom
   (setq aw-keys '(?a ?o ?e ?u ?h ?t ?n ?s))
+  (aw-keys '(?a ?o ?e ?u ?h ?t ?n ?s))
   :custom-face
   (aw-leading-char-face ((t (:height 4.0 :foreground "#00ff00")))))
 

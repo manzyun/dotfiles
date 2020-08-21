@@ -8,11 +8,10 @@
 
 (package! nhexl-mode)
 
-(package! exec-path-from-shell)
 (package! mastodon)
-(package! org-pomodoro)
 (package! beacon)
 (package! eshell-git-prompt)
 (package! image-tooltip :recipe
   (:host nil :repo
          "https://gist.github.com/b403e7d0f6d7c459136099759c281b6a.git"))
+(package! imenu-list)

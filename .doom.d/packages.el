@@ -7,6 +7,8 @@
 ;; (package! builtin-package :disable t)
 
 (package! nhexl-mode)
+(package! protobuf-mode)
+(package! powershell)
 
 (package! mastodon)
 (package! beacon)
@@ -15,3 +17,4 @@
   (:host nil :repo
          "https://gist.github.com/b403e7d0f6d7c459136099759c281b6a.git"))
 (package! imenu-list)
+(package! fill-column-indicator)

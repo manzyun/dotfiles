@@ -25,11 +25,12 @@
 (setq org-agenda-files (list my-org-directory my-org-agenda-directory))
 
 ;(defvar skk-henkan-show-candidate-keys (?a ?o ?e ?u ?i ?h ?t ?n ?s)
+;; FIXME: If not attachment this defvar, Please upper code in Emacs's eval.
 
 (use-package! ace-window
   :custom
-  (setq aw-keys '(?a ?o ?e ?u ?h ?t ?n ?s))
   (aw-keys '(?a ?o ?e ?u ?h ?t ?n ?s))
+  ;; FIXME: If not attachment this :custom, Please ~(setq aw-keys '(?a ?o ?e ?u ?h ?t ?n ?s))~ in Emacs's eval.
   :custom-face
   (aw-leading-char-face ((t (:height 4.0 :foreground "#00ff00")))))
 

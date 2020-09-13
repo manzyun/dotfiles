@@ -1,29 +1,28 @@
 * My dotfiles
-
-
-** What's this ?
-
 It's my dotfiles.
 Not anymore.
 
 
 ** Prerequisites
-
 *** Emacs
-
 - Ubuntu :: =sudo apt install emacs=
 - Windows with scoop :: =scoop install emacs= [fn:emacs-windows]
 
 
 *** Fish Shell
-
+- Ubuntu :: =sudo apt install fish=
 
 *** Vim
+- Ubuntu :: =sudo apt install vim=
+- Windows on scoop :: =scoop install vim=
 
--------
+** Expand My Dotfiles
+- =.doom.d= directory include files :: Your =.doom.d= directory.
+- =.config/fish= directory include files :: Your config about fish directory.
+- =.*= s :: Maybe, just your home directory root.
 
-** Post? requisites
 
+** Post? Requisites
 Post? You will complete this environment, Please done next sections after my dotfiles download and expanded.
 
 *** Emacs
@@ -34,6 +33,7 @@ My Emacs environment dependent [[https://github.com/hlissner/doom-emacs][DOOM Em
 2. =~/.emacs.d/bin/doom install=
 #+END_QUOTE
 
+
 *** Fish Shell
 My Fish environmet dependent [[https://github.com/jorgebucaran/fisher][Fisher]]
 
@@ -43,10 +43,22 @@ My Fish environmet dependent [[https://github.com/jorgebucaran/fisher][Fisher]]
 
 and just run =fisher= command.
 
-*** TODO Vim
-My Vim environment dependent Vim plug.
+
+*** Vim
+My Vim environment dependent [[https://github.com/junegunn/vim-plug][Vim plug]].
+
+#+BEGIN_QUOTE
+=curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim=
+#+END_QUOTE
+
+and run =:PlugInstall= on Vim.
+
 
 * Reference
 - [[http://lambdalisue.hatenablog.com/entry/2013/06/23/071344][Vimを最強のPython開発環境にする2]]
 - [[http://qiita.com/tadsan/items/9e6903e5db738f408292][(Emacs|Vim)初心者から脱出するためのなんやかんや - Qiita]]
 - [[https://github.com/edc/bass#nvm][edc/bass]]
+
+
+* Footnotes
+- [fn:emacs-windows] Any installing tips in [[https://github.com/manzyun/dotfiles/tree/master/.doom.d][.doom.d/README.org]]

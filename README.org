@@ -1,0 +1,52 @@
+* My dotfiles
+
+
+** What's this ?
+
+It's my dotfiles.
+Not anymore.
+
+
+** Prerequisites
+
+*** Emacs
+
+- Ubuntu :: =sudo apt install emacs=
+- Windows with scoop :: =scoop install emacs= [fn:emacs-windows]
+
+
+*** Fish Shell
+
+
+*** Vim
+
+-------
+
+** Post? requisites
+
+Post? You will complete this environment, Please done next sections after my dotfiles download and expanded.
+
+*** Emacs
+My Emacs environment dependent [[https://github.com/hlissner/doom-emacs][DOOM Emacs]].
+
+#+BEGIN_QUOTE
+1. =git clone --depth 1 https://github.com/hlissner/doom-emacs ~/.emacs.d=
+2. =~/.emacs.d/bin/doom install=
+#+END_QUOTE
+
+*** Fish Shell
+My Fish environmet dependent [[https://github.com/jorgebucaran/fisher][Fisher]]
+
+#+BEGIN_QUOTE
+=curl https://git.io/fisher --create-dirs -sLo ~/.config/fish/functions/fisher.fish=
+#+END_QUOTE
+
+and just run =fisher= command.
+
+*** TODO Vim
+My Vim environment dependent Vim plug.
+
+* Reference
+- [[http://lambdalisue.hatenablog.com/entry/2013/06/23/071344][Vimを最強のPython開発環境にする2]]
+- [[http://qiita.com/tadsan/items/9e6903e5db738f408292][(Emacs|Vim)初心者から脱出するためのなんやかんや - Qiita]]
+- [[https://github.com/edc/bass#nvm][edc/bass]]

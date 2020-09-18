@@ -20,6 +20,9 @@
       ;doom-big-font (font-spec :size 20))
 
 ;; For private Org-mode documents directory
+;; TODO: If your job site changes, rewrite it for your convenience. Example:
+;; (setq my-org-directory "~/Documents/**/")
+;; (setq my-org-agenda-directory "~/Documents/**/agenda/")
 (setq my-org-directory "~/Dropbox/org/")
 (setq my-org-agenda-directory "~/Dropbox/org/agenda/")
 (setq org-agenda-files (list my-org-directory my-org-agenda-directory))

@@ -6,15 +6,21 @@
 ;; (package! another-package :recipe (:host github :repo "username/repo"))
 ;; (package! builtin-package :disable t)
 
+(package! toml-mode)
 (package! nhexl-mode)
 (package! protobuf-mode)
 (package! powershell)
+(package! bazel-mode :recipe
+  (:host github
+   :repo "bazelbuild/emacs-bazel-mode"
+   :files ("lisp/*.el")))
+
 
 (package! mastodon)
 (package! beacon)
 (package! eshell-git-prompt)
 (package! image-tooltip :recipe
-  (:host nil :repo
-         "https://gist.github.com/b403e7d0f6d7c459136099759c281b6a.git"))
+  (:host nil
+   :repo "https://gist.github.com/b403e7d0f6d7c459136099759c281b6a.git"))
 (package! imenu-list)
 (package! fill-column-indicator)

@@ -3,7 +3,11 @@
 
 * For Windows with Scoop
 1. scoop install emacs
-  - and any packages.
+  - and any packages.examples:
+    - git :: I'm dependented this about my works and jobs.
+    - unxutils :: maybe include =diffutils= , =findutils=. If not included, you will installing then. 
+    - ripgrep
+    - fd
 2. Append =PATH= enviromnent value. value is =~= . 
 3. doom install
 

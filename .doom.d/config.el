@@ -7,6 +7,7 @@
 (setq coding-system-for-read 'utf-8)
 (setq coding-system-for-write 'utf-8)
 (setq default-input-method "japanese-skk")
+(setq system-time-locale "C")
 
 (setq doom-theme 'doom-moonlight)
 (setq doom-font(font-spec :family "Ubuntu Mono" :size 12)

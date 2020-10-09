@@ -14,6 +14,9 @@
       doom-unicode-font(font-spec :family "Noto Serif CJK JP")
       doom-big-font (font-spec :size 20))
 
+(centaur-tabs-mode t)
+(setq centaur-tabs-style "bar")
+
 ; TODO: This under place codes for Windows, maybe.
 ;(setq doom-theme 'doom-gruvbox)
 ;(setq doom-font(font-spec :family "JetBrains Mono" :size 12)

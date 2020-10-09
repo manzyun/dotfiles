@@ -9,13 +9,13 @@
 (setq default-input-method "japanese-skk")
 (setq system-time-locale "C")
 
-(setq doom-theme 'tango-dark)
+(setq doom-theme 'doom-gruvbox)
 (setq doom-font(font-spec :family "Ubuntu Mono" :size 12)
       doom-unicode-font(font-spec :family "Noto Serif CJK JP")
       doom-big-font (font-spec :size 20))
 
 ; TODO: This under place codes for Windows, maybe.
-;(setq doom-theme 'tango-dark)
+;(setq doom-theme 'doom-gruvbox)
 ;(setq doom-font(font-spec :family "JetBrains Mono" :size 12)
       ;doom-unicode-font(font-spec :family "Meiryo UI")
       ;doom-big-font (font-spec :size 20))

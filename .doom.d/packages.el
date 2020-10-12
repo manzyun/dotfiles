@@ -22,5 +22,3 @@
 (package! image-tooltip :recipe
   (:host nil
    :repo "https://gist.github.com/b403e7d0f6d7c459136099759c281b6a.git"))
-(package! imenu-list)
-(package! fill-column-indicator)

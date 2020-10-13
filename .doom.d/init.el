@@ -76,9 +76,6 @@
        ;;term              ; terminals in Emacs
        ;;vterm           ; another terminals in Emacs
 
-       :os
-       tty               ; improve the terminal Emacs experience
-
        :checkers
        syntax            ; tasing you for every semicolon you forget
        spell             ; tasing you for misspelling mispelling
@@ -95,7 +92,6 @@
        gist              ; interacting with github gists
        lookup            ; navigate your code and its documentation
        (lsp +peek)
-       ;;macos           ; MacOS-specific commands
        magit             ; a git porcelain for Emacs
        make              ; run make tasks from Emacs
        pass              ; password manager for nerds
@@ -107,9 +103,14 @@
        tmux              ; an API for interacting with tmux
        upload          ; map local to remote projects via ssh/ftp
 
+       
+       :os
+       (:if IS-MAC macos)  ; improve compatibility with macOS
+       tty               ; improve the terminal Emacs experience
+       
        :lang
        ;;agda              ; types of types of types of types...
-       ;;cc                ; C/C++/Obj-C madness
+       (cc +lsp)           ; C/C++/Obj-C madness
        ;;clojure           ; java with a lisp
        ;;common-lisp       ; if you've seen one lisp, you've seen them all
        ;;coq               ; proofs-as-programs
@@ -146,7 +147,7 @@
        ;;ocaml             ; an objective camel
 
        ; organize your plain life in plain text
-       (org +brain +journal +pandoc +pomodoro +present +pretty)
+       (org +brain +dragondrop +journal +noter +pandoc +pomodoro +present +pretty)
 
        (php +lsp)         ; perl's insecure younger brother
        plantuml          ; diagrams for confusing people more
@@ -167,7 +168,7 @@
        swift             ; who asked for emoji variables?
        ;;terra             ; Earth and Moon in alignment for performance.
        (web +css +html)   ; the tubes
-       yaml              ; JSON, but readable
+       (yaml +lsp)         ; JSON, but readable
 
 
        :email

@@ -9,7 +9,6 @@
 (package! toml-mode)
 (package! nhexl-mode)
 (package! protobuf-mode)
-(package! powershell)
 (package! bazel-mode :recipe
   (:host github
    :repo "bazelbuild/emacs-bazel-mode"
@@ -18,7 +17,6 @@
 
 (package! mastodon)
 (package! beacon)
-(package! eshell-git-prompt)
 (package! image-tooltip :recipe
   (:host nil
    :repo "https://gist.github.com/b403e7d0f6d7c459136099759c281b6a.git"))

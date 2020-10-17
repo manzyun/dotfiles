@@ -10,7 +10,6 @@
 (package! nhexl-mode)
 (package! protobuf-mode)
 (package! graphviz-dot-mode)
-(package! company-graphviz-dot)
 (package! bazel-mode :recipe
   (:host github
    :repo "bazelbuild/emacs-bazel-mode"

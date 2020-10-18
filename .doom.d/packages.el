@@ -6,6 +6,7 @@
 ;; (package! another-package :recipe (:host github :repo "username/repo"))
 ;; (package! builtin-package :disable t)
 
+(package! nvm)
 (package! toml-mode)
 (package! nhexl-mode)
 (package! protobuf-mode)

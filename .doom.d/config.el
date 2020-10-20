@@ -54,6 +54,18 @@
 ;;                             "~/Documents/org/archive"))
 ;; Of course. If you want use this config, Running =bootstrap.sh= on your want directory. 
 
+;; Org-capture-templates
+(setq org-capture-templates
+      '(("a" "Just 'Ah!', 'Aha!' and any ideas."
+         entry (file nil)
+         "#+TITLE: %?n #+DATE: $Un"
+         )
+        ("t" "Get and thinking todos. But, not set priority and judge of do."
+         item (file "~/Dropbox/plans/daily.org")
+         "* TODO %? $T"
+         )))
+
+
 (setq org-refile-targets '((org-agenda-files :maxlevel . 3)))
 
 

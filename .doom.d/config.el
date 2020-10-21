@@ -7,7 +7,7 @@
 (defvar skk-henkan-show-candidate-keys '(?a ?o ?e ?u ?i ?h ?t ?n ?s))
 (setq system-time-locale "C")
 
-
+;; DOOM Emacs face configration
 (setq doom-theme 'doom-gruvbox)
 (setq doom-font(font-spec :family "Ubuntu Mono" :size 12)
       doom-unicode-font(font-spec :family "Noto Serif CJK JP")
@@ -28,16 +28,16 @@
 (setq org-default-notes-file "notes.org")
 (setq org-directory "~/Dropbox/org")
 (setq org-agenda-files (list "~/Dropbox/org"
-                             "~/Dropbox/org/inbox"
-                             "~/Dropbox/org/plans"
-                             "~/Dropbox/org/agenda"
-                             "~/Dropbox/org/outbox"
-                             "~/Dropbox/org/projects"
-                             "~/Dropbox/org/reviews"
-                             "~/Dropbox/org/topics"
-                             "~/Dropbox/org/journal"
-                             "~/Dropbox/org/snippets"
-                             "~/Dropbox/org/archive"))
+                             "~/Dropbox/org/Inbox"
+                             "~/Dropbox/org/Plans"
+                             "~/Dropbox/org/Agenda"
+                             "~/Dropbox/org/Outbox"
+                             "~/Dropbox/org/Projects"
+                             "~/Dropbox/org/Reviews"
+                             "~/Dropbox/org/Topics"
+                             "~/Dropbox/org/Journal"
+                             "~/Dropbox/org/Snippets"
+                             "~/Dropbox/org/Archive"))
 
 ;; TODO: If your job site changes, rewrite it for your convenience. Example:
 ;;(setq org-directory "~/Documents/org")
@@ -65,15 +65,30 @@
          "* TODO %? $T"
          )))
 
-
+;; Org-refile configration.
 (setq org-refile-targets '((org-agenda-files :maxlevel . 3)))
 
+;; Org-journal configuration
+(setq org-journal-dir "~/Dropbox/org/Journal")
+(setq org-journal-date-format "%Y-%m-%d, %A")
+(setq org-journal-time-format "%R\n\n")
+(setq org-journal-file-format "%Y-%m-%d.org")
 
-(use-package! ace-window
-  :custom
-  (aw-keys '(?a ?o ?e ?u ?h ?t ?n ?s))
-  :custom-face
-  (aw-leading-char-face ((t (:height 4.0 :foreground "#00ff00")))))
+
+;; NOTE: ~'(?a ?o ?e ?u ?i ?h ?t ?n ?s)~ and ~'(?a ?o ?e ?u ?h ?t ?n ?s)~
+;;   Why this selection?
+;;   I use Dvorak keyboard layout.
+;;   But, I would not recommend this setup for beginners.
+;;   Because this setting is a bit peaky.
+(defvar skk-henkan-show-candidate-keys '(?a ?o ?e ?u ?i ?h ?t ?n ?s))
+(setq aw-keys '(?a ?o ?e ?u ?h ?t ?n ?s))
+
+
+;; Any modules configration
+(custom-set-faces!
+  '(aw-leading-char-face
+    :height 4.0
+    :foreground "#00ff00"))
 
 
 (use-package! beacon

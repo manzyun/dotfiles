@@ -4,7 +4,7 @@
 (setq coding-system-for-read 'utf-8)
 (setq coding-system-for-write 'utf-8)
 (setq default-input-method "japanese-skk")
-(defvar skk-henkan-show-candidate-keys '(?a ?o ?e ?u ?i ?h ?t ?n ?s))
+(setq skk-byte-compile-init-file t)
 (setq system-time-locale "C")
 
 ;; DOOM Emacs face configration
@@ -80,8 +80,8 @@
 ;;   I use Dvorak keyboard layout.
 ;;   But, I would not recommend this setup for beginners.
 ;;   Because this setting is a bit peaky.
-(defvar skk-henkan-show-candidate-keys '(?a ?o ?e ?u ?i ?h ?t ?n ?s))
-(setq aw-keys '(?a ?o ?e ?u ?h ?t ?n ?s))
+(setq skk-henkan-show-candidate-keys '(?a ?o ?e ?u ?i ?h ?t ?n ?s))
+(setq! aw-keys '(?a ?o ?e ?u ?h ?t ?n ?s))
 
 
 ;; Any modules configration

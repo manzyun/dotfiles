@@ -5,11 +5,12 @@
 (setq coding-system-for-write 'utf-8)
 (setq default-input-method "japanese-skk")
 (setq skk-byte-compile-init-file t)
+(setq ispell-dictionary 'english)
 (setq system-time-locale "C")
 
 ;; DOOM Emacs face configration
 (setq doom-theme 'doom-gruvbox)
-(setq doom-font(font-spec :family "Ubuntu Mono" :size 12)
+(setq doom-font(font-spec :family "Ubuntu Mono" :size 16)
       doom-unicode-font(font-spec :family "Noto Serif CJK JP")
       doom-big-font (font-spec :size 20))
 
@@ -81,7 +82,19 @@
 ;;   But, I would not recommend this setup for beginners.
 ;;   Because this setting is a bit peaky.
 (setq skk-henkan-show-candidate-keys '(?a ?o ?e ?u ?i ?h ?t ?n ?s))
+(setq skk-show-mode-show t)
+(setq skk-show-mode-style 'tooltip)
 (setq! aw-keys '(?a ?o ?e ?u ?h ?t ?n ?s))
+
+
+;; auto-mode-file
+;; vala
+(add-to-list 'auto-mode-alist '("\\.vala$" . vala-mode))
+(add-to-list 'auto-mode-alist '("\\.vapi$" . vala-mode))
+(add-to-list 'file-coding-system-alist '("\\.vala$" . utf-8))
+(add-to-list 'file-coding-system-alist '("\\.vapi$" . utf-8))
+;; PlantUML
+(add-to-list 'auto-mode-alist '("\\.pu$" . plantuml-mode))
 
 
 ;; Any modules configration
@@ -89,13 +102,6 @@
   '(aw-leading-char-face
     :height 4.0
     :foreground "#00ff00"))
-
-
-(use-package! beacon
-  :custom
-  (beacon-color "green")
-  :config
-  (beacon-mode 1))
 
 
 (use-package! minimap

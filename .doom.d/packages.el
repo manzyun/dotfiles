@@ -8,9 +8,11 @@
 
 (package! nvm)
 (package! toml-mode)
+(package! vala-mode)
 (package! nhexl-mode)
 (package! protobuf-mode)
 (package! graphviz-dot-mode)
+(package! plantuml-mode)
 (package! bazel-mode :recipe
   (:host github
    :repo "bazelbuild/emacs-bazel-mode"
@@ -18,7 +20,9 @@
 
 
 (package! mastodon)
-(package! beacon)
+(package! discord-emacs :recipe
+  (:host github
+  :repo "nitros12/discord-emacs.el"))
 (package! image-tooltip :recipe
   (:host nil
    :repo "https://gist.github.com/b403e7d0f6d7c459136099759c281b6a.git"))

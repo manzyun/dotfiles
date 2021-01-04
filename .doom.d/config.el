@@ -5,14 +5,22 @@
 (setq coding-system-for-write 'utf-8)
 (setq default-input-method "japanese-skk")
 (setq skk-byte-compile-init-file t)
-(setq ispell-dictionary 'english)
+(setq ispell-dictionary "english")
 (setq system-time-locale "C")
+(display-time-mode t)
+(setq display-time-24hr-format t)
 
 ;; DOOM Emacs face configration
 (setq doom-theme 'doom-gruvbox)
 (setq doom-font(font-spec :family "Ubuntu Mono" :size 16)
       doom-unicode-font(font-spec :family "Noto Serif CJK JP")
       doom-big-font (font-spec :size 20))
+(setq default-frame-alist
+      (append (list
+               '(width . 256)
+               '(height . 64))
+              default-frame-alist))
+(setq initial-frame-alist default-frame-alist)
 
 ; TODO: This under place codes for Windows, maybe.
 ;(setq doom-theme 'doom-gruvbox)

@@ -13,10 +13,8 @@
 (package! protobuf-mode)
 (package! graphviz-dot-mode)
 (package! plantuml-mode)
-(package! bazel-mode :recipe
-  (:host github
-   :repo "bazelbuild/emacs-bazel-mode"
-   :files ("lisp/*.el")))
+(package! focus)
+(package! lsp-focus)
 
 
 (package! mastodon)

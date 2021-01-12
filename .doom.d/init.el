@@ -35,7 +35,7 @@
        hl-todo           ; highlight TODO/FIXME/NOTE/DEPRECATED/HACK/REVIEW
        ;;hydra
        indent-guides     ; highlighted indent columns
-       (ligatures +fira +pragmata-pro +extra)  ; ligatures and symbols to make your code pretty again
+       (ligatures +fira +extra)  ; ligatures and symbols to make your code pretty again
        minimap           ; show a map of the code on the side
        modeline          ; snazzy, Atom-inspired modeline, plus API
        nav-flash         ; blink the current line after jumping
@@ -148,7 +148,7 @@
        ;;ocaml             ; an objective camel
 
        ; organize your plain life in plain text
-       (org +brain +dragondrop +journal +noter +pandoc +pomodoro +present +pretty)
+       (org +brain +dragondrop +journal +pandoc +pomodoro +present +pretty)
 
        (php +lsp)          ; perl's insecure younger brother
        plantuml            ; diagrams for confusing people more

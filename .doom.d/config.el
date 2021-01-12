@@ -34,47 +34,17 @@
 
 
 ;; For private Org-mode documents directory
-(setq org-default-notes-file "notes.org")
 (setq org-directory "~/Dropbox/org")
 (setq org-agenda-files (list "~/Dropbox/org"
-                             "~/Dropbox/org/Inbox"
-                             "~/Dropbox/org/Plans"
-                             "~/Dropbox/org/Agenda"
-                             "~/Dropbox/org/Outbox"
-                             "~/Dropbox/org/Projects"
-                             "~/Dropbox/org/Reviews"
-                             "~/Dropbox/org/Topics"
-                             "~/Dropbox/org/Journal"
-                             "~/Dropbox/org/Snippets"
-                             "~/Dropbox/org/Archive"))
+                             "~/Dropbox/org/Projects"))
 
 ;; TODO: If your job site changes, rewrite it for your convenience. Example:
 ;;(setq org-directory "~/Documents/org")
 ;;(setq org-agenda-files (list "~/Documents/org"
-;;                             "~/Documents/org/inbox"
-;;                             "~/Documents/org/plans"
-;;                             "~/Documents/org/agenda"
-;;                             "~/Documents/org/outbox"
-;;                             "~/Documents/org/projects"
-;;                             "~/Documents/org/reviews"
-;;                             "~/Documents/org/topics"
-;;                             "~/Documents/org/journal"
-;;                             "~/Documents/org/snippets"
-;;                             "~/Documents/org/archive"))
+;;                             "~/Documents/org/projects"))
 ;; Of course. If you want use this config, Running =bootstrap.sh= on your want directory. 
 
-;; Org-capture-templates
-(setq org-capture-templates
-      '(("a" "Just 'Ah!', 'Aha!' and any ideas."
-         entry (file nil)
-         "#+TITLE: %?n #+DATE: $Un"
-         )
-        ("t" "Get and thinking todos. But, not set priority and judge of do."
-         item (file "~/Dropbox/plans/daily.org")
-         "* TODO %? $T"
-         )))
-
-;; Org-refile configration.
+;; Org-refile configuration.
 (setq org-refile-targets '((org-agenda-files :maxlevel . 3)))
 
 ;; Org-journal configuration

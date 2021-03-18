@@ -13,8 +13,8 @@
 ;; DOOM Emacs face configration
 (setq doom-theme 'doom-gruvbox)
 (setq doom-font(font-spec :family "Ubuntu Mono" :size 16)
-      doom-unicode-font(font-spec :family "Noto Serif CJK JP")
-      doom-big-font (font-spec :size 20))
+      doom-unicode-font(font-spec :family "Noto Serif CJK JP" :size 16)
+      doom-big-font (font-spec :size 24))
 (setq default-frame-alist
       (append (list
                '(width . 256)
@@ -37,6 +37,8 @@
 (setq org-directory "~/Dropbox/org")
 (setq org-agenda-files (list "~/Dropbox/org"
                              "~/Dropbox/org/Projects"))
+(setq org-todo-keywords
+      '((sequence "TODO(t)" "NEXT(e)" "SCHEDULE(s)" "EVENT(v)" "|" "DONE(d)" "CANCEL(c)")))
 
 ;; TODO: If your job site changes, rewrite it for your convenience. Example:
 ;;(setq org-directory "~/Documents/org")

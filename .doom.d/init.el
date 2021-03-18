@@ -84,10 +84,10 @@
        ;;grammar           ; tasing grammar mistake every you make
 
        :tools
-       ansible
+       ;;ansible
        (debugger +lsp)    ; FIXME stepping through code, to help you add bugs
        direnv
-       (docker +lsp)
+       ;;(docker +lsp)
        editorconfig      ; let someone else argue about tabs vs spaces
        ;;ein             ; tame Jupyter notebooks with emacs
        (eval +overlay)   ; run code, run (also, repls)
@@ -101,7 +101,7 @@
        prodigy           ; FIXME managing external services & code builders
        rgb               ; creating color strings
        taskrunner      ; taskrunner for all your projects
-       terraform         ; infrastructure as code
+       ;;terraform         ; infrastructure as code
        tmux              ; an API for interacting with tmux
        upload          ; map local to remote projects via ssh/ftp
 
@@ -178,7 +178,7 @@
        ;;(wanderlust +gmail)
 
        :app
-       calendar
+       ;;calendar
        ;;irc               ; how neckbeards socialize
        ;;(rss +org)        ; emacs as an RSS reader
        ;;twitter           ; twitter client https://twitter.com/vnought

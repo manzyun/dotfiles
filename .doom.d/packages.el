@@ -8,11 +8,8 @@
 
 (package! nvm)
 (package! toml-mode)
-(package! vala-mode)
 (package! nhexl-mode)
-(package! protobuf-mode)
 (package! graphviz-dot-mode)
-(package! plantuml-mode)
 (package! focus)
 (package! lsp-focus)
 

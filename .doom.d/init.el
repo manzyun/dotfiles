@@ -28,14 +28,15 @@
 
        :ui
        ;;deft              ; notational velocity for Emacs
-       doom                ; what makes DOOM look the way it does
-       doom-dashboard      ; a nifty splash screen for Emacs
-       doom-quit           ; DOOM quit-message prompts when you quit Emacs
-       (emoji +unicode +github)  ; 🙂
-       hl-todo             ; highlight TODO/FIXME/NOTE/DEPRECATED/HACK/REVIEW
+       doom              ; what makes DOOM look the way it does
+       doom-dashboard    ; a nifty splash screen for Emacs
+       doom-quit         ; DOOM quit-message prompts when you quit Emacs
+       ;emoji  ; 🙂
+       fill-column       ; a `fill-column' indicator
+       hl-todo           ; highlight TODO/FIXME/NOTE/DEPRECATED/HACK/REVIEW
        ;;hydra
-       indent-guides       ; highlighted indent columns
-       (ligatures +fira +extra)  ; ligatures and symbols to make your code pretty again
+       indent-guides     ; highlighted indent columns
+       ;;ligatures  ; ligatures and symbols to make your code pretty again
        ;;minimap             ; show a map of the code on the side
        modeline            ; snazzy, Atom-inspired modeline, plus API
        nav-flash           ; blink the current line after jumping
@@ -66,7 +67,7 @@
        ;;word-wrap         ; soft wrapping with language-aware indent
 
        :emacs
-       (dired +ranger +icons)  ; making dired pretty [functional]
+       (dired +ranger)  ; making dired pretty [functional]
        electric          ; smarter, keyword-based electric-indent
        ;;ibuffer          ; interactive buffer management
        undo             ; persistent, smarter undo for your inevitable mistakes

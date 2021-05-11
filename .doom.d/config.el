@@ -9,18 +9,24 @@
 (setq system-time-locale "C")
 (display-time-mode t)
 (setq display-time-24hr-format t)
+(defun skk-open-server-decoding-utf-8 ()
+  "辞書サーバと接続する。サーバープロセスを返す。 decoding coding-system が euc ではなく utf8 となる。"
+  (unless (skk-server-live-p)
+    (setq skkserv-process (skk-open-server-1))
+    (when (skk-server-live-p)
+      (let ((code (cdr (assoc "euc" skk-coding-system-alist))))
+	(set-process-coding-system skkserv-process 'utf-8 code))))
+  skkserv-process)
+(setq skk-mode-hook
+      '(lambda()
+         (advice-add 'skk-open-server :override 'skk-open-server-decoding-utf-8)))
 
 ;; DOOM Emacs face configration
 (setq doom-theme 'doom-gruvbox)
 (setq doom-font(font-spec :family "Ubuntu Mono" :size 16)
-      doom-unicode-font(font-spec :family "Noto Serif CJK JP" :size 16)
+      doom-unicode-font(font-spec :family "Noto Serif CJK JP light"
+                                  :size 16)
       doom-big-font (font-spec :size 24))
-(setq default-frame-alist
-      (append (list
-               '(width . 256)
-               '(height . 64))
-              default-frame-alist))
-(setq initial-frame-alist default-frame-alist)
 
 ; TODO: This under place codes for Windows, maybe.
 ;(setq doom-theme 'doom-gruvbox)
@@ -36,9 +42,8 @@
 ;; For private Org-mode documents directory
 (setq org-directory "~/Dropbox/org")
 (setq org-agenda-files (list "~/Dropbox/org"
-                             "~/Dropbox/org/Projects"))
-(setq org-todo-keywords
-      '((sequence "TODO(t)" "NEXT(e)" "SCHEDULE(s)" "EVENT(v)" "|" "DONE(d)" "CANCEL(c)")))
+                             "~/Dropbox/org/Projects"
+                             "~/Dropbox/org/Journal"))
 
 ;; TODO: If your job site changes, rewrite it for your convenience. Example:
 ;;(setq org-directory "~/Documents/org")
@@ -46,8 +51,6 @@
 ;;                             "~/Documents/org/projects"))
 ;; Of course. If you want use this config, Running =bootstrap.sh= on your want directory. 
 
-;; Org-refile configuration.
-(setq org-refile-targets '((org-agenda-files :maxlevel . 3)))
 
 ;; Org-journal configuration
 (setq org-journal-dir "~/Dropbox/org/Journal")
@@ -64,17 +67,7 @@
 (setq skk-henkan-show-candidate-keys '(?a ?o ?e ?u ?i ?h ?t ?n ?s))
 (setq skk-show-mode-show t)
 (setq skk-show-mode-style 'tooltip)
-(setq! aw-keys '(?a ?o ?e ?u ?h ?t ?n ?s))
-
-
-;; auto-mode-file
-;; vala
-(add-to-list 'auto-mode-alist '("\\.vala$" . vala-mode))
-(add-to-list 'auto-mode-alist '("\\.vapi$" . vala-mode))
-(add-to-list 'file-coding-system-alist '("\\.vala$" . utf-8))
-(add-to-list 'file-coding-system-alist '("\\.vapi$" . utf-8))
-;; PlantUML
-(add-to-list 'auto-mode-alist '("\\.pu$" . plantuml-mode))
+(setq aw-keys '(?a ?o ?e ?u ?h ?t ?n ?s))
 
 
 ;; Any modules configration

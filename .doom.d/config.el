@@ -9,24 +9,12 @@
 (setq system-time-locale "C")
 (display-time-mode t)
 (setq display-time-24hr-format t)
-(defun skk-open-server-decoding-utf-8 ()
-  "辞書サーバと接続する。サーバープロセスを返す。 decoding coding-system が euc ではなく utf8 となる。"
-  (unless (skk-server-live-p)
-    (setq skkserv-process (skk-open-server-1))
-    (when (skk-server-live-p)
-      (let ((code (cdr (assoc "euc" skk-coding-system-alist))))
-	(set-process-coding-system skkserv-process 'utf-8 code))))
-  skkserv-process)
-(setq skk-mode-hook
-      '(lambda()
-         (advice-add 'skk-open-server :override 'skk-open-server-decoding-utf-8)))
 
 ;; DOOM Emacs face configration
 (setq doom-theme 'doom-gruvbox)
 (setq doom-font(font-spec :family "Ubuntu Mono" :size 16)
-      doom-unicode-font(font-spec :family "Noto Serif CJK JP light"
-                                  :size 16)
-      doom-big-font (font-spec :size 24))
+      doom-unicode-font(font-spec :family "Noto Sans CJK JP" :size 16)
+      doom-big-font (font-spec :size 32))
 
 ; TODO: This under place codes for Windows, maybe.
 ;(setq doom-theme 'doom-gruvbox)
@@ -43,7 +31,7 @@
 (setq org-directory "~/Dropbox/org")
 (setq org-agenda-files (list "~/Dropbox/org"
                              "~/Dropbox/org/Projects"
-                             "~/Dropbox/org/Journal"))
+                             "~/Dropbox/org/"))
 
 ;; TODO: If your job site changes, rewrite it for your convenience. Example:
 ;;(setq org-directory "~/Documents/org")
@@ -51,6 +39,8 @@
 ;;                             "~/Documents/org/projects"))
 ;; Of course. If you want use this config, Running =bootstrap.sh= on your want directory. 
 
+;; Org-refile configuration.
+(setq org-refile-targets '((org-agenda-files :maxlevel . 3)))
 
 ;; Org-journal configuration
 (setq org-journal-dir "~/Dropbox/org/Journal")
@@ -85,3 +75,5 @@
 
 
 (setq mastodon-instance-url "https://qiitadon.com")
+(setq discord-emacs-ipc-dir "~/.var/app/com.discordapp.Discord/")
+(setq discord-emacs--client-id "389246483267846146")

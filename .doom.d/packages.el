@@ -8,11 +8,10 @@
 
 (package! nvm)
 (package! toml-mode)
-(package! nhexl-mode)
-(package! graphviz-dot-mode)
 (package! focus)
 (package! lsp-focus)
-(package! imenu-list)
+(package! websocket)
+(package! org-roam-ui :recipe (:host github :repo "org-roam/org-roam-ui" :files ("*.el" "out")))
 
 
 (package! mastodon)

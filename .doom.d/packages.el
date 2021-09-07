@@ -12,6 +12,7 @@
 (package! lsp-focus)
 (package! websocket)
 (package! org-roam-ui :recipe (:host github :repo "org-roam/org-roam-ui" :files ("*.el" "out")))
+(package! ov)
 
 
 (package! mastodon)
@@ -19,3 +20,4 @@
 (package! image-tooltip :recipe
   (:host nil
    :repo "https://gist.github.com/b403e7d0f6d7c459136099759c281b6a.git"))
+

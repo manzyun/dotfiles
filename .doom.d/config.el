@@ -13,8 +13,9 @@
 ;; DOOM Emacs face configration
 (setq doom-theme 'doom-gruvbox)
 (setq doom-font(font-spec :family "Ubuntu Mono" :size 16)
-      doom-unicode-font(font-spec :family "Noto Sans CJK JP" :size 16)
-      doom-big-font (font-spec :size 32))
+      doom-variable-pitch-font(font-spec :family "Ubuntu Mono")
+      doom-serif-font(font-spec :family "Noto Serif CJK JP")
+      doom-big-font(font-spec :size 32))
 
 ; TODO: This under place codes for Windows, maybe.
 ;(setq doom-theme 'doom-gruvbox)
@@ -70,3 +71,17 @@
 
 ; My DMZ about mental.
 (setq mastodon-instance-url "https://qiitadon.com")
+
+
+;; Not packages. It's just me functions.
+
+;; Ref:: https://qiita.com/tadsan/items/13780e2546b69679d3f2
+(require 'ov)
+(defun just-me/buffer-cursiviliize-mikachan ()
+  "Cursivilize current buffer of mikachan."
+  (interactive)
+  (ov (point-min) (point-max) 'face '(:family "mikachan-p")))
+(defun just-me/buffer-cursiviliize-nagurip ()
+  "Cursivilize current buffer of S2G Nagurigaki."
+  (interactive)
+  (ov (point-min) (point-max) 'face '(:family "S2G Nagurigaki font-PRO")))

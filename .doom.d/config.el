@@ -9,6 +9,11 @@
 (setq system-time-locale "C")
 (display-time-mode t)
 (setq display-time-24hr-format t)
+(setq-default ispell-program-name "aspell")
+(with-eval-after-load "ispell"
+  (setq ispell-local-dictionary "en_US")
+  (add-to-list 'ispell-skip-region-alist '("[^\000-\377]+")))
+
 
 ;; DOOM Emacs face configration
 (setq doom-theme 'doom-gruvbox)
@@ -37,24 +42,6 @@
 (setq org-journal-find-file "~/Dropbox/org/journal.org")
 (setq org-journal-date-format "%Y-%m-%d, %A")
 (setq org-journal-time-format "%R\n")
-
-(use-package! org-roam
-  :custom
-  (org-roam-db-location "~/.emacs.d/org-roam.db"))
-(use-package! websocket
-    :after org-roam)
-
-(use-package! org-roam-ui
-    :after org-roam ;; or :after org
-;;         normally we'd recommend hooking orui after org-roam, but since org-roam does not have
-;;         a hookable mode anymore, you're advised to pick something yourself
-;;         if you don't care about startup time, use
-;;  :hook (after-init . org-roam-ui-mode)
-    :config
-    (setq org-roam-ui-sync-theme t
-          org-roam-ui-follow t
-          org-roam-ui-update-on-save t
-          org-roam-ui-open-on-start t))
 
 
 ;; Any modules configration
@@ -85,3 +72,11 @@
   "Cursivilize current buffer of S2G Nagurigaki."
   (interactive)
   (ov (point-min) (point-max) 'face '(:family "S2G Nagurigaki font-PRO")))
+(defun just-me/buffer-serif-hanazono ()
+  "Cursivilize current buffer of mikachan."
+  (interactive)
+  (ov (point-min) (point-max) 'face '(:family "HanaMinA")))
+(defun just-me/buffer-sans-hanazono ()
+  "Cursivilize current buffer of mikachan."
+  (interactive)
+  (ov (point-min) (point-max) 'face '(:family "Ume P Gothic")))

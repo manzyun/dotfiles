@@ -9,16 +9,16 @@
 (setq system-time-locale "C")
 (display-time-mode t)
 (setq display-time-24hr-format t)
-(setq-default ispell-program-name "aspell")
-(with-eval-after-load "ispell"
-  (setq ispell-local-dictionary "en_US")
-  (add-to-list 'ispell-skip-region-alist '("[^\000-\377]+")))
+(after! flyspell
+        (setq ispell-local-dictionary "en_US")
+        (add-to-list 'ispell-skip-region-alist '("[^\000-\377]+")))
 
 
 ;; DOOM Emacs face configration
 (setq doom-theme 'doom-gruvbox)
 (setq doom-font(font-spec :family "Ubuntu Mono" :size 16)
       doom-variable-pitch-font(font-spec :family "Ubuntu Mono")
+      doom-unicode-font(font-spec :family "Noto Serif CJK JP")
       doom-serif-font(font-spec :family "Noto Serif CJK JP")
       doom-big-font(font-spec :size 32))
 

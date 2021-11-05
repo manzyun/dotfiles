@@ -1,8 +1,0 @@
-# This file contains fish universal variable definitions.
-# VERSION: 3.0
-SETUVAR __fish_initialized:0
-SETUVAR _fisher_fishpkg_2F_fish_2D_prompt_2D_mono_files:/home/manzyun/\x2econfig/fish/functions/fish_mode_prompt\x2efish\x1e/home/manzyun/\x2econfig/fish/functions/fish_prompt\x2efish\x1e/home/manzyun/\x2econfig/fish/functions/fish_title\x2efish\x1e/home/manzyun/\x2econfig/fish/conf\x2ed/hydro\x2efish
-SETUVAR _fisher_jorgebucaran_2F_fisher_files:/home/manzyun/\x2econfig/fish/functions/fisher\x2efish\x1e/home/manzyun/\x2econfig/fish/completions/fisher\x2efish
-SETUVAR _fisher_plugins:jorgebucaran/fisher\x1efishpkg/fish\x2dprompt\x2dmono
-SETUVAR _hydro_git_21873:main\u2022\x20
-SETUVAR fish_key_bindings:fish_default_key_bindings

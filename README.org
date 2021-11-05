@@ -8,7 +8,6 @@ Not anymore.
 - Ubuntu :: =sudo apt install emacs nodejs # because, nodejs is working LSP=
 - Windows with [[https://scoop.sh/][scoop]] :: =scoop install emacs # because, nodejs is working LSP= [fn:emacs-windows]
 
-
 *** Fish Shell
 - Ubuntu :: =sudo apt install fish=
 
@@ -18,9 +17,17 @@ Not anymore.
 
 ** Expand My Dotfiles
 - =.doom.d= directory include files :: Your =.doom.d= directory.
-- =.config/fish= directory include files :: Your config about fish directory.
 - =.*= s :: Maybe, just your home directory root.
 
+*** Install
+
+#+BEGIN_SRC shell
+cd ~; git init
+git remote add origin git@github.com:manzyun/dotfiles.git
+git pull origin main
+#+END_SRC
+
+Warning :: I'm not think conflict of your dotfiles!
 
 ** Post? Requisites
 Post? You will complete this environment, Please done next sections after my dotfiles download and expanded.
@@ -29,34 +36,13 @@ Post? You will complete this environment, Please done next sections after my dot
 My Emacs environment dependent [[https://github.com/hlissner/doom-emacs][DOOM Emacs]].
 
 #+BEGIN_SRC shell
-mkdir ~/.doom.d; cd .doom.d; git init
-git config core.sparsecheckout true; git remote add origin https://github.com/manzyun/dotfiles.git
-echo .doom.d > .git/info/sparse-checkout # Appendix: You can use choice "| tee" alt ">" .
-git pull origin main
 git clone --depth 1 https://github.com/hlissner/doom-emacs ~/.emacs.d; ~/.emacs.d/bin/doom install
 #+END_SRC
-
-
-*** Fish Shell
-My Fish environmet dependent [[https://github.com/jorgebucaran/fisher][Fisher]]
-
-#+BEGIN_SRC shell
-mkdir -p ~/.config/fish; cd ~/.config/fish; git init
-git config core.sparsecheckout true; git remote add origin https://github.com/manzyun/dotfiles.git
-echo .config/fish > .git/info/sparse-checkout # Appendix: You can choice "| tee" alt ">" .
-git pull origin main
-#+END_SRC
-
 
 *** Vim
 My Vim environment dependent [[https://github.com/junegunn/vim-plug][Vim plug]].
 
 #+BEGIN_SRC shell
-git init
-git config core.sparsecheckout true; git remote add origin https://github.com/manzyun/dotfiles.git
-echo .config/fish > .git/info/sparse-checkout # Appendix: You can use choice "| tee" alt ">" .
-echo .vimrc > .git/info/sparse-checkout  # Appendix: You can choice "| tee" alt ">" .
-git pull origin main
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 #+END_SRC
 

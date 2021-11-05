@@ -1,2 +1,7 @@
-bundle/
-.netrwhist
+/*
+!README.org
+!/.gitignore
+!/.doom.d/
+!/.config/fish/
+!/.vimrc
+

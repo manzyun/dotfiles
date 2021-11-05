@@ -45,8 +45,6 @@ mkdir -p ~/.config/fish; cd ~/.config/fish; git init
 git config core.sparsecheckout true; git remote add origin https://github.com/manzyun/dotfiles.git
 echo .config/fish > .git/info/sparse-checkout # Appendix: You can choice "| tee" alt ">" .
 git pull origin main
-curl https://git.io/fisher --create-dirs -sLo ~/.config/fish/functions/fisher.fish
-fisher
 #+END_SRC
 
 

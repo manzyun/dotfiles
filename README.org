@@ -8,8 +8,11 @@ Not anymore.
 - Ubuntu :: =sudo apt install emacs nodejs # because, nodejs is working LSP=
 - Windows with [[https://scoop.sh/][scoop]] :: =scoop install emacs # because, nodejs is working LSP= [fn:emacs-windows]
 
+
 *** Fish Shell
 - Ubuntu :: =sudo apt install fish=
+
+And install [[https://github.com/simnalamburt/shellder][shellder]] before installed [[https://github.com/jorgebucaran/fisher][fisher]]
 
 *** Vim
 - Ubuntu :: =sudo apt install vim=
@@ -17,17 +20,18 @@ Not anymore.
 
 ** Expand My Dotfiles
 - =.doom.d= directory include files :: Your =.doom.d= directory.
+- =.config/fish= directory include files :: Your config about fish directory.
 - =.*= s :: Maybe, just your home directory root.
 
 *** Install
 
 #+BEGIN_SRC shell
 cd ~; git init
-git remote add origin git@github.com:manzyun/dotfiles.git
+git remote add origin git@github.com:/manzyun/dotfiles.git
 git pull origin main
 #+END_SRC
 
-Warning :: I'm not think conflict of your dotfiles!
+WARNING: I'm not think conflict your dotfiles!
 
 ** Post? Requisites
 Post? You will complete this environment, Please done next sections after my dotfiles download and expanded.

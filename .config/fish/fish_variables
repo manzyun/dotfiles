@@ -1,12 +1,9 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
 SETUVAR __fish_initialized:3100
-SETUVAR _fisher_fishpkg_2F_fish_2D_prompt_2D_mono_files:/home/manzyun/\x2econfig/fish/functions/fish_mode_prompt\x2efish\x1e/home/manzyun/\x2econfig/fish/functions/fish_prompt\x2efish\x1e/home/manzyun/\x2econfig/fish/functions/fish_title\x2efish\x1e/home/manzyun/\x2econfig/fish/conf\x2ed/hydro\x2efish
-SETUVAR _fisher_jorgebucaran_2F_fisher_files:/home/manzyun/\x2econfig/fish/functions/fisher\x2efish\x1e/home/manzyun/\x2econfig/fish/completions/fisher\x2efish
-SETUVAR _fisher_plugins:jorgebucaran/fisher\x1efishpkg/fish\x2dprompt\x2dmono
-SETUVAR _hydro_git_21873:main\u2022\x20
-SETUVAR _hydro_git_26191:\x1d
+SETUVAR _fisher_plugins:simnalamburt/shellder
 SETUVAR _hydro_git_26651:main\u2022\x20
+SETUVAR _hydro_git_35890:main\u2022\x20
 SETUVAR fish_color_autosuggestion:555\x1ebrblack
 SETUVAR fish_color_cancel:\x2dr
 SETUVAR fish_color_command:005fd7
@@ -31,7 +28,7 @@ SETUVAR fish_color_status:red
 SETUVAR fish_color_user:brgreen
 SETUVAR fish_color_valid_path:\x2d\x2dunderline
 SETUVAR fish_greeting:Welcome\x20to\x20fish\x2c\x20the\x20friendly\x20interactive\x20shell\x0aType\x20\x60help\x60\x20for\x20instructions\x20on\x20how\x20to\x20use\x20fish
-SETUVAR fish_key_bindings:fish_default_key_bindings
+SETUVAR fish_key_bindings:fish_vi_key_bindings
 SETUVAR fish_pager_color_completion:\x1d
 SETUVAR fish_pager_color_description:B3A06D\x1eyellow
 SETUVAR fish_pager_color_prefix:white\x1e\x2d\x2dbold\x1e\x2d\x2dunderline

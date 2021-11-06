@@ -4,6 +4,13 @@ SETUVAR __fish_initialized:3100
 SETUVAR _fisher_plugins:simnalamburt/shellder
 SETUVAR _hydro_git_26651:main\u2022\x20
 SETUVAR _hydro_git_35890:main\u2022\x20
+SETUVAR _hydro_git_41580:main\u2022\x20
+SETUVAR _hydro_git_46828:main\u2022\x20
+SETUVAR _hydro_git_46901:main\u2022\x20
+SETUVAR _hydro_git_47742:main\u2022\x20
+SETUVAR _hydro_git_56567:main\u2022\x20
+SETUVAR _hydro_git_7773:main\u2022\x20
+SETUVAR _hydro_git_8173:main\u2022\x20
 SETUVAR fish_color_autosuggestion:555\x1ebrblack
 SETUVAR fish_color_cancel:\x2dr
 SETUVAR fish_color_command:005fd7

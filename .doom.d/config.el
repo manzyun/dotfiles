@@ -15,7 +15,7 @@
 
 
 ;; DOOM Emacs face configration
-(setq doom-theme 'doom-gruvbox)
+(setq doom-theme 'doom-Iosvkem)
 (setq doom-font(font-spec :family "Ubuntu Mono" :size 16)
       doom-variable-pitch-font(font-spec :family "Ubuntu Mono")
       doom-unicode-font(font-spec :family "Noto Serif CJK JP")

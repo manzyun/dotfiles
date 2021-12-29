@@ -103,7 +103,7 @@
        ;;taskrunner          ; taskrunner for all your projects
        ;;terraform         ; infrastructure as code
        ;;tmux                ; an API for interacting with tmux
-       ;;upload              ; map local to remote projects via ssh/ftp
+       upload              ; map local to remote projects via ssh/ftp
 
        :os
        (:if IS-MAC macos)  ; improve compatibility with macOS
@@ -149,7 +149,7 @@
        ;;ocaml             ; an objective camel
        (org +dragondrop +pandoc +pomodoro +pretty) ; organize your plain life in plain text
        php               ; perl's insecure younger brother
-       ;;plantuml          ; diagrams for confusing people more
+       plantuml          ; diagrams for confusing people more
        ;;purescript        ; javascript, but functional
        (python +lsp +poetry +cython)           ; beautiful is better than ugly
        ;;qt                ; the 'cutest' gui framework ever

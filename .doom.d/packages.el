@@ -6,6 +6,7 @@
 ;; (package! another-package :recipe (:host github :repo "username/repo"))
 ;; (package! builtin-package :disable t)
 
+(package! nhexl-mode)
 (package! toml-mode)
 (package! focus)
 (package! lsp-focus)

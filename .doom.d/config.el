@@ -20,7 +20,7 @@
       doom-variable-pitch-font(font-spec :family "Ubuntu Mono")
       doom-unicode-font(font-spec :family "Noto Serif CJK JP")
       doom-serif-font(font-spec :family "Noto Serif CJK JP")
-      doom-big-font(font-spec :size 32))
+      doom-big-font(font-spec :family "Noto Serif CJK JP" :size 32))
 
 ; TODO: This under place codes for Windows, maybe.
 ;(setq doom-theme 'doom-gruvbox)
@@ -44,6 +44,7 @@
   '(aw-leading-char-face
     :height 4.0
     :foreground "#00ff00"))
+(setq gdscript-godot-executable "/usr/bin/godot3") ;Default Godot execution.
 
 
 ; My DMZ about mental.

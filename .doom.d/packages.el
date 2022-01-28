@@ -7,9 +7,9 @@
 ;; (package! builtin-package :disable t)
 
 (package! nhexl-mode)
-(package! base16-theme)
 (package! focus)
 (package! lsp-focus)
+(package! base16-theme)
 (package! ov)
 
 

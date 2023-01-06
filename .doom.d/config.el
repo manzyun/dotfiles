@@ -37,36 +37,3 @@
 
 ;; Org-refile configuration.
 (setq org-refile-targets '((org-agenda-files :maxlevel . 3)))
-
-
-;; Any modules configration
-(custom-set-faces!
-  '(aw-leading-char-face
-    :height 4.0
-    :foreground "#00ff00"))
-
-
-; My DMZ about mental.
-(setq mastodon-instance-url "https://qiitadon.com")
-
-
-;; Not packages. It's just me functions.
-
-;; Ref:: https://qiita.com/tadsan/items/13780e2546b69679d3f2
-(require 'ov)
-(defun just-me/buffer-cursiviliize-mikachan ()
-  "Cursivilize current buffer of mikachan."
-  (interactive)
-  (ov (point-min) (point-max) 'face '(:family "mikachan-p")))
-(defun just-me/buffer-cursiviliize-nagurip ()
-  "Cursivilize current buffer of S2G Nagurigaki."
-  (interactive)
-  (ov (point-min) (point-max) 'face '(:family "S2G Nagurigaki font-PRO")))
-(defun just-me/buffer-serif-hanazono ()
-  "Cursivilize current buffer of mikachan."
-  (interactive)
-  (ov (point-min) (point-max) 'face '(:family "HanaMinA")))
-(defun just-me/buffer-sans-hanazono ()
-  "Cursivilize current buffer of mikachan."
-  (interactive)
-  (ov (point-min) (point-max) 'face '(:family "Ume P Gothic")))
